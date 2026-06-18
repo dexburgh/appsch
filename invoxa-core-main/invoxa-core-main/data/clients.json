@@ -1,0 +1,10 @@
+{
+  "CL001": {
+    "feeStructure": {
+      "tier1": { "rate": 0.06, "limit": 200000 },
+      "tier2": { "rate": 0.05, "limit": 50000 },
+      "tier3": { "rate": 0.04 },
+      "accountingFee": { "amount": 1380, "discount": 0.5 }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+invoxa-core/
+├── frontend/         # React + Tailwind dashboard
+├── backend/          # Node.js API or Firebase functions
+├── lib/              # Invoice logic, fee engine
+├── data/             # JSON configs for clients + stats
+├── public/           # Static assets
+├── .env              # Secrets (e.g. SMTP, DB)
+├── README.md

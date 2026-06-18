@@ -1,0 +1,11 @@
+{
+  "CL001": {
+    "month": "2025-08",
+    "TOR": 347006.63,
+    "paymentsReceived": 323560.02,
+    "debtorsAge": "30/60/90",
+    "bankStatementsReceived": true,
+    "reportsCompleted": true,
+    "remarks": "Ready for invoice"
+  }
+}

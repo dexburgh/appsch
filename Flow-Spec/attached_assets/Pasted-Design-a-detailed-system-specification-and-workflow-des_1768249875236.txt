@@ -1,0 +1,40 @@
+Design a detailed system specification and workflow description for a modern anaesthetic billing application with the following requirements:
+
+1. Anaesthetist Client Features:
+  - Secure login system.
+  - Ability to upload up to three photos per billing entry.
+  - Fields to input ICD10 code, procedure name, and procedure code.
+  - Ability to select additional pre-coded options (pre-coded select).
+  - Input fields for patient height and weight.
+  - Capture theatre start and end times for the procedure.
+  - A submission mechanism that sends the billing entry to the office dashboard.
+
+2. Office Staff Features:
+  - Secure login system separate from the anaesthetist client.
+  - Dashboard displaying all submitted billing entries.
+  - Ability to process accounts by either:
+    a) Deferring back to the anaesthetist client for clarity (with notes or requests).
+    b) Adding an account number and marking the account as processed.
+  - Once processed, the account should be flagged as 'done' and reflected accordingly on the dashboard.
+
+3. Workflow Details:
+  - Ensure clear status indicators: submitted, deferred, and done.
+  - Track timestamps for submission, deferral, and processing.
+  - Maintain audit logs for account changes and user actions.
+
+4. User Experience & Security:
+  - Responsive and user-friendly interfaces for both anaesthetist and office staff.
+  - Data validation for ICD10 codes, procedure codes, height, weight, and times.
+  - Secure handling of photo uploads and data storage.
+
+# Steps
+
+- Define user roles and permissions.
+- Design database schema for users, billing entries, photos, and statuses.
+- Specify UI wireframes or feature lists for each user type.
+- Outline the workflow states and transitions.
+- Detail security measures for login, data validation, and file storage.
+
+# Output Format
+
+Provide a comprehensive, structured document outlining the system specification, including user stories, data fields, workflow diagrams or descriptions, and security considerations. Use clear headings and bullet points for readability.
