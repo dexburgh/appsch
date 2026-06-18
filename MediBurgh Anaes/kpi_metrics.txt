@@ -1,0 +1,8 @@
+CREATE TABLE kpi_metrics (
+  provider_id VARCHAR REFERENCES providers(provider_id),
+  metric_name TEXT,
+  metric_value TEXT,
+  trend TEXT,
+  color TEXT,
+  recorded_at TIMESTAMP
+);

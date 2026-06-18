@@ -1,0 +1,4 @@
+.mb-logo { display:flex; align-items:center; gap:12px; }
+.mb-logo-img { width:48px; height:48px; object-fit:contain; border-radius:6px; }
+.mb-logo-text { font-size:12px; font-weight:800; letter-spacing:0.35em; text-transform:uppercase; color:#fff; }
+.mb-logo-text em { color:#0aa7a1; font-style:normal; }

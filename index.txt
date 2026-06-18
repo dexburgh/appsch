@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MediBurgh — Medical Billing Intelligence</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="mb-root">
+
+    <nav class="mb-nav">
+      <div class="mb-logo">
+        <img src="ChatGPT-Image-Jun-15-2026-01_26_00-PM.jpg" alt="MediBurgh logo" class="mb-logo-img" />
+        <span class="mb-logo-text">Medi<em>Burgh</em></span>
+      </div>
+      <div class="mb-badge">v2 · Gauteng</div>
+    </nav>
+
+    <div class="mb-hero">
+      <div class="mb-copy">
+        <div class="mb-tagline">Medical Billing Intelligence</div>
+        <h1>
+          <span class="accent">Clinical</span><br>
+          Speed.<br>
+          <span class="ember">Restless</span><br>
+          Automation.
+        </h1>
+        <p>Continuous case capture and validation for South African medical bureaus. Screen modifiers against scheme rulebooks and resolve exceptions before claims hit the wire.</p>
+        <div class="mb-metrics">
+          <div class="mb-metric">
+            <label>MTD Claims</label>
+            <div id="m-count" class="val">1 482</div>
+          </div>
+          <div class="mb-metric">
+            <label>Gross Billed</label>
+            <div id="m-billed" class="val teal">R 1,852,500</div>
+          </div>
+          <div class="mb-metric">
+            <label>Clear Rate</label>
+            <div class="val amber">98.4%</div>
+          </div>
+        </div>
+        <div class="mb-cta-row">
+          <button class="mb-btn-primary" id="demo-btn">Request Demo</button>
+          <button class="mb-btn-ghost" id="roadmap-btn">View Roadmap</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="mb-device-frame">
+          <div class="mb-device-screen">
+            <div class="mb-screen-glow"></div>
+            <div class="mb-pane mb-pane-l">
+              <div class="mb-pane-title">Rulebook Engine <div class="mb-live-dot"></div></div>
+              <div class="mb-field">
+                <div class="mb-field-lbl">Scheme</div>
+                <div class="mb-field-val">Discovery Health</div>
+              </div>
+              <div class="mb-field">
+                <div class="mb-field-lbl">Code</div>
+                <div class="mb-field-val">2615 · C/Section.</div>
+              </div>
+              <div class="mb-field">
+                <div class="mb-field-lbl">Patient BMI</div>
+                <div class="mb-field-val">36.5 ⚠</div>
+              </div>
+              <div class="mb-warn-chip">⚠ BMI &gt;35 — attach Modifier 0018 before transmit</div>
+            </div>
+            <div class="mb-pane mb-pane-r">
+              <div class="mb-pane-title">Bureau Thread</div>
+              <div class="mb-chat-col">
+                <div class="mb-bubble bureau">Dr Burke — end time missing on Case #8209.</div>
+                <div class="mb-bubble doc">Scalpel down at 14:15. Updating now.</div>
+                <div class="mb-bubble bureau">Confirmed. Modifier flagged. Ready.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-divider"></div>
+
+    <div style="padding: 0 40px;">
+      <div class="mb-features">
+        <div class="mb-feat">
+          <div class="mb-feat-num">01 —</div>
+          <h3>Theatre Capture</h3>
+          <p>Snapshot hospital sheets at needle-down. Zero administrative lag behind theatre lines.</p>
+        </div>
+        <div class="mb-feat">
+          <div class="mb-feat-num">02 —</div>
+          <h3>Rulebook Engine</h3>
+          <p>Real-time code audit against SA scheme frameworks. Catches rejections before they happen.</p>
+        </div>
+        <div class="mb-feat">
+          <div class="mb-feat-num">03 —</div>
+          <h3>ICD-10 Search</h3>
+          <p>Fully searchable ICD-10 code list built in. Find any diagnostic code by description or number instantly.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-full-divider" style="margin-top: 40px;"></div>
+
+    <div class="mb-section">
+      <div class="mb-section-label">Development Roadmap</div>
+      <div class="mb-section-title">What's Coming</div>
+      <div class="mb-section-sub">Planned feature releases across the MediBurgh platform. All builds driven by real bureau workflow needs.</div>
+
+      <div class="mb-roadmap">
+        <div class="mb-roadmap-item">
+          <div class="mb-rm-phase">
+            <div class="mb-rm-vtag">v2</div>
+            <div class="mb-rm-status">Live</div>
+          </div>
+          <div class="mb-rm-body">
+            <h4>Core Dashboard</h4>
+            <p>Real-time claim submission, scheme rulebook warnings, bureau chat loop, live metrics panel, and fully searchable ICD-10 code list.</p>
+          </div>
+        </div>
+        <div class="mb-roadmap-item">
+          <div class="mb-rm-phase">
+            <div class="mb-rm-vtag">v3</div>
+            <div class="mb-rm-status">Planned</div>
+          </div>
+          <div class="mb-rm-body">
+            <h4>PMB Auto-Flagging</h4>
+            <p>Automatic detection and flagging of Prescribed Minimum Benefit conditions on claim entries, with statutory funding trace tags injected directly onto the invoice.</p>
+          </div>
+        </div>
+        <div class="mb-roadmap-item">
+          <div class="mb-rm-phase">
+            <div class="mb-rm-vtag">v3</div>
+            <div class="mb-rm-status">Planned</div>
+          </div>
+          <div class="mb-rm-body">
+            <h4>Procedure Quote Builder</h4>
+            <p>Pre-operative patient cost estimation built from historical code combinations and bureau payout margins.</p>
+          </div>
+        </div>
+        <div class="mb-roadmap-item">
+          <div class="mb-rm-phase">
+            <div class="mb-rm-vtag">v4</div>
+            <div class="mb-rm-status">Future</div>
+          </div>
+          <div class="mb-rm-body">
+            <h4>Gap Cover Split Routing</h4>
+            <p>Automates secondary balance sheets for medical shortfalls, routing directly to linked gap insurers (e.g. Stratum, Zestlife).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-full-divider"></div>
+
+    <div class="mb-section">
+      <div class="mb-section-label">Pricing</div>
+      <div class="mb-section-title">Transparent Tiers</div>
+      <div class="mb-section-sub">Per-practice monthly pricing. No hidden costs. Cancel any time. All tiers include onboarding support from the MediBurgh team.</div>
+
+      <div class="mb-pricing-grid">
+        <div class="mb-price-card">
+          <div class="mb-price-tier">Solo Practice</div>
+          <div class="mb-price-amount">
+            <span class="curr">R</span>
+            <span class="num">1 800</span>
+            <span class="period">/mo</span>
+          </div>
+          <div class="mb-price-items">
+            <div class="mb-price-item">1 practitioner</div>
+            <div class="mb-price-item">Core dashboard + rulebook engine</div>
+            <div class="mb-price-item">Full ICD-10 search</div>
+            <div class="mb-price-item">Bureau chat loop</div>
+            <div class="mb-price-item">Email support</div>
+          </div>
+          <div class="mb-price-note">For single-doctor private practices or specialists billing independently.</div>
+          <button class="mb-price-cta">Get Started</button>
+        </div>
+
+        <div class="mb-price-card featured">
+          <div class="mb-price-featured-badge">Most Popular</div>
+          <div class="mb-price-tier teal">Bureau Pro</div>
+          <div class="mb-price-amount">
+            <span class="curr">R</span>
+            <span class="num">3 900</span>
+            <span class="period">/mo</span>
+          </div>
+          <div class="mb-price-items">
+            <div class="mb-price-item">Up to 5 practitioners</div>
+            <div class="mb-price-item">Everything in Solo</div>
+            <div class="mb-price-item">Live metrics + telemetry panel</div>
+            <div class="mb-price-item">Multi-thread adjudication</div>
+            <div class="mb-price-item">PMB auto-flagging on release</div>
+            <div class="mb-price-item">Priority support</div>
+          </div>
+          <div class="mb-price-note">For active medical bureaus managing multiple doctors across specialities.</div>
+          <button class="mb-price-cta primary">Get Started</button>
+        </div>
+
+        <div class="mb-price-card">
+          <div class="mb-price-tier">Enterprise</div>
+          <div class="mb-price-amount">
+            <span class="curr" style="font-size:12px; color:#485666;">Custom</span>
+          </div>
+          <div class="mb-price-items">
+            <div class="mb-price-item">Unlimited practitioners</div>
+            <div class="mb-price-item">Everything in Bureau Pro</div>
+            <div class="mb-price-item">Custom rulebook configuration</div>
+            <div class="mb-price-item">Gap cover routing (v4)</div>
+            <div class="mb-price-item">Dedicated account manager</div>
+            <div class="mb-price-item">SLA + compliance documentation</div>
+          </div>
+          <div class="mb-price-note">For hospital groups, large bureaus, or multi-site practices.</div>
+          <button class="mb-price-cta">Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-full-divider"></div>
+
+    <div class="mb-section">
+      <div class="mb-section-label">Get In Touch</div>
+      <div class="mb-section-title">Contact MediBurgh</div>
+      <div class="mb-section-sub">Based in Gauteng. Reach out for a demo, a quote, or to talk through your bureau's setup.</div>
+
+      <div class="mb-contact-grid">
+        <div class="mb-contact-info">
+          <div class="mb-contact-block">
+            <label>Location</label>
+            <span>Gauteng, South Africa</span>
+            <p>Changing the way South Africa approaches billing.</p>
+          </div>
+          <div class="mb-contact-block">
+            <label>Focus</label>
+            <span>Medical Billing & Practice Support</span>
+            <p>Specialists in SA scheme compliance, anaesthetic billing, and bureau workflow automation.</p>
+          </div>
+          <div class="mb-contact-block">
+            <label>Response Time</label>
+            <span>Same business day</span>
+          </div>
+          <div class="mb-contact-block">
+            <label>Platform</label>
+            <span>MediBurgh v2</span>
+            <p>Demo access available on request.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-form">
+            <div class="mb-form-row">
+              <div class="mb-input-block">
+                <label>Name</label>
+                <input class="mb-input" type="text" placeholder="Your name" id="cf-name" />
+              </div>
+              <div class="mb-input-block">
+                <label>Practice / Bureau</label>
+                <input class="mb-input" type="text" placeholder="Practice name" id="cf-practice" />
+              </div>
+            </div>
+            <div class="mb-input-block">
+              <label>Email</label>
+              <input class="mb-input" type="email" placeholder="your@email.com" id="cf-email" />
+            </div>
+            <div class="mb-input-block">
+              <label>What are you looking for?</label>
+              <textarea class="mb-textarea" id="cf-msg" placeholder="Demo request, pricing question, integration enquiry..."></textarea>
+            </div>
+            <div id="mb-confirm" class="mb-form-confirm">Message received — the MediBurgh team will be in touch within one business day.</div>
+            <button class="mb-btn-primary" id="send-btn" style="width:100%; padding:12px;">Send Enquiry</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-full-divider"></div>
+
+    <div class="mb-footer">
+      <div><em>MediBurgh</em> · Gauteng, ZA</div>
+      <div>Medical Billing Intelligence</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

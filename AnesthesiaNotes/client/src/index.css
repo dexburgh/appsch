@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Nexpath Professional Medical Branding */
+:root {
+  --nexpath-gold: 251 191 36;
+  --nexpath-dark: 30 41 59;
+  --nexpath-purple: 147 51 234;
+  --nexpath-teal: 45 212 191;
+  --nexpath-gradient: linear-gradient(135deg, #9333ea 0%, #2dd4bf 100%);
+  --medical-blue: 37 99 235;
+  --medical-green: 34 197 94;
+  --medical-accent: 245 158 11;
+}
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(210, 25%, 7.8431%);
+  --card: hsl(0, 0%, 98%);
+  --card-foreground: hsl(210, 25%, 7.8431%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 25%, 7.8431%);
+  --primary: hsl(210, 79%, 46%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 25%, 7.8431%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(240, 1.9608%, 90%);
+  --muted-foreground: hsl(210, 25%, 7.8431%);
+  --accent: hsl(210, 40%, 94%);
+  --accent-foreground: hsl(210, 79%, 46%);
+  --destructive: hsl(0, 84%, 57%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(0, 0%, 96%);
+  --ring: hsl(210, 79%, 46%);
+  --chart-1: hsl(210, 79%, 46%);
+  --chart-2: hsl(120, 100%, 29%);
+  --chart-3: hsl(35, 91%, 48%);
+  --chart-4: hsl(142, 76%, 36%);
+  --chart-5: hsl(336, 75%, 40%);
+  --sidebar: hsl(0, 0%, 98%);
+  --sidebar-foreground: hsl(210, 25%, 7.8431%);
+  --sidebar-primary: hsl(210, 79%, 46%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(210, 40%, 94%);
+  --sidebar-accent-foreground: hsl(210, 79%, 46%);
+  --sidebar-border: hsl(214, 32%, 91%);
+  --sidebar-ring: hsl(210, 79%, 46%);
+  --font-sans: 'Roboto', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  
+  /* Anaesthetic Ease brand colors */
+  --medical-blue: hsl(210, 79%, 46%);
+  --medical-green: hsl(122, 39%, 49%);
+  --medical-red: hsl(0, 69%, 51%);
+  --medical-amber: hsl(35, 100%, 48%);
+  --medical-surface: hsl(210, 20%, 98%);
+  --medical-text: hsl(215, 25%, 27%);
+  --brand-dark: hsl(215, 25%, 27%);
+  --brand-metallic: hsl(35, 100%, 48%);
+  --brand-accent: hsl(210, 79%, 46%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(200, 6.6667%, 91.1765%);
+  --card: hsl(228, 9.8039%, 10%);
+  --card-foreground: hsl(0, 0%, 85.0980%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(200, 6.6667%, 91.1765%);
+  --primary: hsl(210, 79%, 46%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(195, 15.3846%, 94.9020%);
+  --secondary-foreground: hsl(210, 25%, 7.8431%);
+  --muted: hsl(0, 0%, 9.4118%);
+  --muted-foreground: hsl(210, 3.3898%, 46.2745%);
+  --accent: hsl(210, 40%, 15%);
+  --accent-foreground: hsl(210, 79%, 46%);
+  --destructive: hsl(0, 84%, 57%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5.2632%, 14.9020%);
+  --input: hsl(207, 27.6596%, 18.4314%);
+  --ring: hsl(210, 79%, 46%);
+  --chart-1: hsl(210, 79%, 46%);
+  --chart-2: hsl(120, 100%, 29%);
+  --chart-3: hsl(35, 91%, 48%);
+  --chart-4: hsl(142, 76%, 36%);
+  --chart-5: hsl(336, 75%, 40%);
+  --sidebar: hsl(228, 9.8039%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85.0980%);
+  --sidebar-primary: hsl(210, 79%, 46%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(210, 40%, 15%);
+  --sidebar-accent-foreground: hsl(210, 79%, 46%);
+  --sidebar-border: hsl(205, 15.7895%, 26.0784%);
+  --sidebar-ring: hsl(210, 79%, 46%);
+  --font-sans: 'Roboto', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Medical theme utilities */
+.bg-medical-blue {
+  background-color: var(--medical-blue);
+}
+
+.bg-medical-green {
+  background-color: var(--medical-green);
+}
+
+.bg-medical-red {
+  background-color: var(--medical-red);
+}
+
+.bg-medical-amber {
+  background-color: var(--medical-amber);
+}
+
+.bg-medical-surface {
+  background-color: var(--medical-surface);
+}
+
+.text-medical-blue {
+  color: var(--medical-blue);
+}
+
+.text-medical-green {
+  color: var(--medical-green);
+}
+
+.text-medical-red {
+  color: var(--medical-red);
+}
+
+.text-medical-amber {
+  color: var(--medical-amber);
+}
+
+.text-medical-text {
+  color: var(--medical-text);
+}
+
+.font-roboto {
+  font-family: var(--font-sans);
+}
+
+/* Material elevation shadows */
+.shadow-md {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+}
+
+/* Ripple effect for buttons */
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+.ripple-effect {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple-effect:active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 0.3s ease-out;
+}

@@ -1,0 +1,5 @@
+[
+  { "metric": "Revenue Cycle Time", "value": "28 days", "trend": "↓ 2 days", "color": "blue" },
+  { "metric": "Denial Rate", "value": "4.2%", "trend": "↑ 0.3%", "color": "red" },
+  ...
+]
