@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/_ext/:path*",
+      "destination": "https://api.example.com/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "x-powered-by",
+          "value": "Next.js on Vercel"
+        }
+      ]
+    }
+  ]
+}
