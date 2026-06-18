@@ -1,0 +1,3 @@
+claim_id,patient_id,service_date,cpt_code,icd10_primary,charge_amount
+CLM-001,PAT-001,2024-01-15,99213,I10,150.00
+CLM-002,PAT-002,2024-01-16,99214,J44.9,200.00
